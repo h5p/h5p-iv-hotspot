@@ -1,7 +1,7 @@
 H5P.IVHotspot = (function ($) {
 
   /**
-   * Create a new Go To Question!
+   * Create a new IV Hotspot!
    *
    * @class H5P.IVHotspot
    * @extends H5P.EventDispatcher
