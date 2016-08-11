@@ -1,0 +1,122 @@
+[
+  {
+    "name": "destination",
+    "label": "Destination",
+    "type": "group",
+    "expanded": true,
+    "fields": [
+      {
+        "name": "type",
+        "label": "Type",
+        "type": "select",
+        "options": [
+          {
+            "value": "timecode",
+            "label": "Timecode"
+          },
+          {
+            "value": "url",
+            "label": "Another page (URL)"
+          }
+        ],
+        "default": "timecode"
+      },
+      {
+        "name": "time",
+        "type": "number",
+        "widget": "timecode",
+        "label": "Go To",
+        "description": "The target time the user will be taken to upon pressing the hotspot. Enter timecode in the format M:SS.",
+        "optional": true
+      },
+      {
+        "name": "url",
+        "type": "group",
+        "label": "URL",
+        "widget": "linkWidget",
+        "fields": [
+          {
+            "name": "protocol",
+            "type": "select",
+            "label": "Protocol",
+            "options": [
+              {
+                "value": "http://",
+                "label": "http://"
+              },
+              {
+                "value": "https://",
+                "label": "https://"
+              },
+              {
+                "value": "/",
+                "label": "(root relative)"
+              },
+              {
+                "value": "other",
+                "label": "other"
+              }
+            ],
+            "optional": true,
+            "default": "http://"
+          },
+          {
+            "name": "url",
+            "type": "text",
+            "label": "URL",
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "visuals",
+    "type": "group",
+    "label": "Visuals",
+    "expanded": true,
+    "fields": [
+      {
+        "name": "shape",
+        "type": "select",
+        "label": "Shape",
+        "options": [
+          {
+            "value": "rectangular",
+            "label": "Rectangular"
+          },
+          {
+            "value": "circular",
+            "label": "Circular"
+          }
+        ],
+        "default": "circular"
+      },
+      {
+        "name": "backgroundColor",
+        "type": "text",
+        "label": "Background color for hotspot",
+        "widget": "colorSelector",
+        "default": "rgba(255, 255, 255, 0.6)",
+        "spectrum": {
+          "showInput": true,
+          "showAlpha": true,
+          "preferredFormat": "rgb"
+        }
+      }
+    ]
+  },
+  {
+    "name": "texts",
+    "type": "group",
+    "label": "Texts",
+    "fields": [
+      {
+        "name": "ariaLabel",
+        "type": "text",
+        "label": "Label for blind people",
+        "optional": true
+      }
+    ]
+  }
+]

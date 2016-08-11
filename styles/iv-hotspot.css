@@ -1,0 +1,16 @@
+.h5p-ivhotspot {
+  overflow: hidden;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.h5p-ivhotspot > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.h5p-ivhotspot.circular,
+.h5p-ivhotspot.circular > a {
+  border-radius: 50%;
+}
