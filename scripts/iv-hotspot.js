@@ -32,24 +32,34 @@ H5P.IVHotspot = (function ($) {
         backgroundColor: parameters.visuals.backgroundColor
       }).addClass(parameters.visuals.shape);
 
+      var $a;
       if (parameters.destination.type === 'url') {
         var link = new H5P.Link({
+          title: '',
           linkWidget: parameters.destination.url
         });
 
         link.attach($container);
-
+        $a = $container.find('a');
         if (parameters.texts.ariaLabel) {
-          $container.find('a').attr('aria-label', parameters.texts.ariaLabel);
+          $a.attr('aria-label', parameters.texts.ariaLabel);
         }
       }
       else {
-        var $a = $('<a>', {
+        $a = $('<a>', {
           'aria-label': parameters.texts.ariaLabel
         }).on('click', function () {
           self.trigger('goto', parameters.destination.time);
         });
         $container.html($a);
+      }
+
+      $a.css({cursor: parameters.visuals.pointerCursor ? 'pointer' : 'default'});
+
+      if (parameters.visuals.animation || H5PEditor !== undefined) {
+        $container.append($('<div>', {
+          'class': 'blinking-hotspot'
+        }));
       }
     };
   }

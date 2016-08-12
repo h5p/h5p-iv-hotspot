@@ -34,6 +34,7 @@
         "type": "group",
         "label": "URL",
         "widget": "linkWidget",
+        "optional": true,
         "fields": [
           {
             "name": "protocol",
@@ -103,6 +104,18 @@
           "showAlpha": true,
           "preferredFormat": "rgb"
         }
+      },
+      {
+        "name": "pointerCursor",
+        "type": "boolean",
+        "label": "Use pointer cursor",
+        "default": true
+      },
+      {
+        "name": "animation",
+        "type": "boolean",
+        "label": "Add blinking effect",
+        "description": "Note: Blinking effect is always enabled in the editor so you are able to find transparent hotspots"
       }
     ]
   },
