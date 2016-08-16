@@ -43,6 +43,11 @@
       "machineName": "H5PEditor.UrlField",
       "majorVersion": 1,
       "minorVersion": 0
+    },
+    {
+      "machineName": "H5PEditor.SelectToggleFields",
+      "majorVersion": 1,
+      "minorVersion": 0
     }
   ]
 }
