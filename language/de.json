@@ -1,0 +1,98 @@
+{
+  "semantics": [
+    {
+      "englishLabel": "Destination",
+      "label": "Destination",
+      "fields": [
+        {
+          "englishLabel": "Type",
+          "label": "Type",
+          "options": [
+            {
+              "englishLabel": "Timecode",
+              "label": "Timecode"
+            },
+            {
+              "englishLabel": "Another page (URL)",
+              "label": "Another page (URL)"
+            }
+          ]
+        },
+        {
+          "englishLabel": "Go To",
+          "label": "Go To",
+          "englishDescription": "The target time the user will be taken to upon pressing the hotspot. Enter timecode in the format M:SS.",
+          "description": "The target time the user will be taken to upon pressing the hotspot. Enter timecode in the format M:SS."
+        },
+        {
+          "englishLabel": "URL",
+          "label": "URL",
+          "fields": [
+            {
+              "englishLabel": "Protocol",
+              "label": "Protocol",
+              "options": [
+                {
+                  "englishLabel": "http://",
+                  "label": "http://"
+                },
+                {
+                  "englishLabel": "https://",
+                  "label": "https://"
+                },
+                {
+                  "englishLabel": "(root relative)",
+                  "label": "(root relative)"
+                },
+                {
+                  "englishLabel": "other",
+                  "label": "other"
+                }
+              ]
+            },
+            {
+              "englishLabel": "URL",
+              "label": "URL"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "englishLabel": "Visuals",
+      "label": "Visuals",
+      "fields": [
+        {
+          "englishLabel": "Shape",
+          "label": "Shape",
+          "options": [
+            {
+              "englishLabel": "Rectangular",
+              "label": "Rectangular"
+            },
+            {
+              "englishLabel": "Circular",
+              "label": "Circular"
+            }
+          ]
+        },
+        {
+          "englishLabel": "Background color for hotspot",
+          "label": "Background color for hotspot",
+          "englishDefault": "rgba(255, 255, 255, 0.6)",
+          "default": "TODO"
+        }
+      ]
+    },
+    {
+      "englishLabel": "Texts",
+      "label": "Texts",
+      "fields": [
+        {
+          "englishLabel": "Label for blind people",
+          "label": "Label for blind people"
+        }
+      ]
+    }
+  ]
+}
