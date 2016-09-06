@@ -16,7 +16,7 @@ H5P.IVHotspot = (function ($) {
         time: '0:00'
       },
       visuals: {
-        shape: 'circular',
+        shape: 'rectangular',
         backgroundColor: 'rgba(255, 255, 255, 0.6)'
       },
       texts: {}

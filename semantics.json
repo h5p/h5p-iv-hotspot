@@ -98,7 +98,7 @@
             "label": "Circular"
           }
         ],
-        "default": "circular"
+        "default": "rectangular"
       },
       {
         "name": "backgroundColor",
