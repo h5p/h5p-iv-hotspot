@@ -152,7 +152,7 @@
       {
         "name": "ariaLabel",
         "type": "text",
-        "label": "Label for blind people",
+        "label": "Descriptive text for assistive technologies",
         "optional": true
       }
     ]
