@@ -105,7 +105,7 @@
         "type": "text",
         "label": "Background color for hotspot",
         "widget": "colorSelector",
-        "default": "rgba(255, 255, 255, 0.6)",
+        "default": "rgba(255, 255, 255, 0)",
         "spectrum": {
           "showInput": true,
           "showAlpha": true,
