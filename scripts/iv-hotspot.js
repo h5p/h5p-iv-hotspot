@@ -13,7 +13,7 @@ H5P.IVHotspot = (function ($) {
     parameters = $.extend(true, {
       destination: {
         type: 'timecode',
-        time: '0:00'
+        time: '0'
       },
       visuals: {
         shape: 'rectangular',
