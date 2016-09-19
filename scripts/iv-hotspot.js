@@ -56,7 +56,7 @@ H5P.IVHotspot = (function ($) {
 
       $a.css({cursor: parameters.visuals.pointerCursor ? 'pointer' : 'default'});
 
-      if (parameters.visuals.animation || window.H5PEditor !== undefined) {
+      if (parameters.visuals.animation) {
         $container.append($('<div>', {
           'class': 'blinking-hotspot'
         }));
