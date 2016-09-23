@@ -13,11 +13,11 @@ H5P.IVHotspot = (function ($) {
     parameters = $.extend(true, {
       destination: {
         type: 'timecode',
-        time: '0:00'
+        time: '0'
       },
       visuals: {
         shape: 'rectangular',
-        backgroundColor: 'rgba(255, 255, 255, 0.6)'
+        backgroundColor: 'rgba(255, 255, 255, 0)'
       },
       texts: {}
     }, parameters);
@@ -56,7 +56,7 @@ H5P.IVHotspot = (function ($) {
 
       $a.css({cursor: parameters.visuals.pointerCursor ? 'pointer' : 'default'});
 
-      if (parameters.visuals.animation || window.H5PEditor !== undefined) {
+      if (parameters.visuals.animation) {
         $container.append($('<div>', {
           'class': 'blinking-hotspot'
         }));
