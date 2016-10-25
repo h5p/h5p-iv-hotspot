@@ -1,4 +1,4 @@
-H5P.IVHotspot = (function ($) {
+H5P.IVHotspot = (function ($, EventDispatcher) {
 
   /**
    * Create a new IV Hotspot!
@@ -21,6 +21,8 @@ H5P.IVHotspot = (function ($) {
       },
       texts: {}
     }, parameters);
+
+    EventDispatcher.call(self);
 
     /**
      * Attach the hotspot to the given container.
@@ -64,6 +66,10 @@ H5P.IVHotspot = (function ($) {
     };
   }
 
+  IVHotspot.prototype = Object.create(EventDispatcher.prototype);
+  IVHotspot.prototype.constructor = IVHotspot;
+
+
   return IVHotspot;
 
-})(H5P.jQuery);
+})(H5P.jQuery, H5P.EventDispatcher);
