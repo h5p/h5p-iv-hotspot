@@ -1,0 +1,87 @@
+{
+  "semantics": [
+    {
+      "label": "Ziel",
+      "fields": [
+        {
+          "label": "Typ",
+          "options": [
+            {
+              "label": "Timecode"
+            },
+            {
+              "label": "Andere Seite (URL)"
+            }
+          ],
+          "default": "timecode"
+        },
+        {
+          "label": "Gehe zu",
+          "description": "Die Zielzeit, zu der der Nutzer nach Klick auf den Hotspot geleitet wird. Gib den Timecode im Format M:SS ein."
+        },
+        {
+          "label": "URL",
+          "fields": [
+            {
+              "label": "Protokoll",
+              "options": [
+                {
+                  "label": "http://"
+                },
+                {
+                  "label": "https://"
+                },
+                {
+                  "label": "(relative zum Hauptverzeichnis)"
+                },
+                {
+                  "label": "anderes"
+                }
+              ],
+              "default": "http://"
+            },
+            {
+              "label": "URL"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Visuelles",
+      "fields": [
+        {
+          "label": "Form",
+          "options": [
+            {
+              "label": "rechteckig"
+            },
+            {
+              "label": "rund"
+            }
+          ],
+          "default": "rechteckig"
+        },
+        {
+          "label": "Hintergrundfarbe für den Hotspot",
+          "default": "rgba(255, 255, 255, 0)"
+        },
+        {
+          "label": "Benutze den Mauszeiger"
+        },
+        {
+          "label": "Blinkeffekt hinzufügen",
+          "description": "Hinweis: Im Editor ist der Blinkeffekt immer aktiviert, damit du die Hotspots findest."
+        }
+      ]
+    },
+    {
+      "label": "Texte",
+      "fields": [
+        {
+          "label": "Beschreibender Text für unterstützende Technik"
+        }
+      ]
+    }
+  ]
+}
