@@ -232,15 +232,7 @@
         "type": "boolean",
         "label": "Show title",
         "importance": "low",
-        "default": true,
-        "options": [
-          {
-            "hideFields": [
-              "ariaLabel",
-              "titleColor"
-            ]
-          }
-        ]
+        "default": true
       },
       {
         "name": "titleColor",
