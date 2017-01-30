@@ -238,10 +238,20 @@
         "name": "titleColor",
         "type": "text",
         "label": "Title color",
-        "widget": "colorSelector",
+        "widget": "showWhen",
         "importance": "low",
         "optional": true,
         "default": "rgb(0, 0, 0)",
+        "showWhen": {
+          "detach": true,
+          "widget": "colorSelector",
+          "rules": [
+            {
+              "field": "showTitle",
+              "equals": true
+            }
+          ]
+        },
         "spectrum": {
           "showInput": true,
           "showAlpha": true,
