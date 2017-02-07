@@ -10,9 +10,14 @@
   left: 0;
   top: 0;
   z-index: 1;
-  display: block;
+  display: table;
   width: 100%;
   height: 100%;
+}
+.h5p-ivhotspot > a > p {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
 .h5p-ivhotspot.circular,
 .h5p-ivhotspot.circular > a,
