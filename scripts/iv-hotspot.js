@@ -71,7 +71,7 @@ H5P.IVHotspot = (function ($, EventDispatcher) {
       if (parameters.texts.showTitle && parameters.texts.ariaLabel != undefined) {
         $a.append('<p class="h5p-ivhotspot-interaction-title">' + parameters.texts.ariaLabel + '</p>');
         if (parameters.texts.titleColor) {
-          $a.color('color', parameters.texts.titleColor);
+          $a.css('color', parameters.texts.titleColor);
         }
       }
     };
