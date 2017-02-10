@@ -10,6 +10,10 @@ H5P.IVHotspot = (function ($, EventDispatcher) {
   function IVHotspot(parameters) {
     var self = this;
 
+    if (typeof parameters.texts === 'string') {
+      parameters.texts = {};
+    }
+
     parameters = $.extend(true, {
       destination: {
         type: 'timecode',
@@ -62,6 +66,13 @@ H5P.IVHotspot = (function ($, EventDispatcher) {
         $container.append($('<div>', {
           'class': 'blinking-hotspot'
         }));
+      }
+
+      if (parameters.texts.showTitle && parameters.texts.ariaLabel != undefined) {
+        $a.append('<p class="h5p-ivhotspot-interaction-title">' + parameters.texts.ariaLabel + '</p>');
+        if (parameters.texts.titleColor) {
+          $a.css('color', parameters.texts.titleColor);
+        }
       }
     };
   }
