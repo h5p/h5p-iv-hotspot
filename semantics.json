@@ -104,6 +104,10 @@
           {
             "value": "circular",
             "label": "Circular"
+          },
+          {
+            "value": "rounded-rectangle",
+            "label": "Rounded Rectangle"
           }
         ],
         "default": "rectangular"

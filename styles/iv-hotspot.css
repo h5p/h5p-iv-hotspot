@@ -24,6 +24,11 @@
 .h5p-ivhotspot.circular .blinking-hotspot {
   border-radius: 50%;
 }
+.h5p-ivhotspot.rounded-rectangle,
+.h5p-ivhotspot.rounded-rectangle > a,
+.h5p-ivhotspot.rounded-rectangle .blinking-hotspot {
+  border-radius: 1em;
+}
 .blinking-hotspot {
   position: absolute;
   left: -1px;
