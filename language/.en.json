@@ -1,0 +1,104 @@
+{
+  "semantics": [
+    {
+      "label": "Destination",
+      "fields": [
+        {
+          "label": "Type",
+          "options": [
+            {
+              "label": "Timecode"
+            },
+            {
+              "label": "Another page (URL)"
+            }
+          ],
+          "default": "timecode"
+        },
+        {
+          "label": "Go To",
+          "description": "The target time the user will be taken to upon pressing the hotspot. Enter timecode in the format M:SS."
+        },
+        {
+          "label": "URL",
+          "fields": [
+            {
+              "label": "Protocol",
+              "options": [
+                {
+                  "label": "http://"
+                },
+                {
+                  "label": "https://"
+                },
+                {
+                  "label": "(root relative)"
+                },
+                {
+                  "label": "other"
+                }
+              ],
+              "default": "http://"
+            },
+            {
+              "label": "URL"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Visuals",
+      "fields": [
+        {
+          "label": "Shape",
+          "options": [
+            {
+              "label": "Rectangular"
+            },
+            {
+              "label": "Circular"
+            },
+            {
+              "label": "Rounded Rectangle"
+            }
+          ],
+          "default": "rectangular"
+        },
+        {
+          "label": "Background color for hotspot",
+          "default": "rgba(255, 255, 255, 0)",
+          "spectrum": {}
+        },
+        {
+          "label": "Use pointer cursor"
+        },
+        {
+          "label": "Add blinking effect",
+          "description": "Note: Blinking effect is always enabled in the editor so you are able to find transparent hotspots"
+        }
+      ]
+    },
+    {
+      "label": "Texts",
+      "fields": [
+        {
+          "label": "Title"
+        },
+        {
+          "label": "Show title"
+        },
+        {
+          "label": "Title color",
+          "default": "rgb(0, 0, 0)",
+          "showWhen": {
+            "rules": [
+              {}
+            ]
+          },
+          "spectrum": {}
+        }
+      ]
+    }
+  ]
+}

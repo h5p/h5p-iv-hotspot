@@ -1,57 +1,44 @@
 {
   "semantics": [
     {
-      "englishLabel": "Destination",
       "label": "Destinacija",
       "fields": [
         {
-          "englishLabel": "Type",
           "label": "Tip",
           "options": [
             {
-              "englishLabel": "Timecode",
               "label": "Kod vremena"
             },
             {
-              "englishLabel": "Another page (URL)",
               "label": "Druga stranica (URL)"
             }
           ]
         },
         {
-          "englishLabel": "Go To",
           "label": "Idi na",
-          "englishDescription": "The target time the user will be taken to upon pressing the hotspot. Enter timecode in the format M:SS.",
           "description": "Ciljano vrijeme koje želi korinik će biti uzeto pritiskom na hotspot.Unesite kod vremena u formatu M:SS."
         },
         {
-          "englishLabel": "URL",
           "label": "URL",
           "fields": [
             {
-              "englishLabel": "Protocol",
               "label": "Protokol",
               "options": [
                 {
-                  "englishLabel": "http://",
                   "label": "http://"
                 },
                 {
-                  "englishLabel": "https://",
                   "label": "https://"
                 },
                 {
-                  "englishLabel": "(root relative)",
                   "label": "(u odnosu na korijen)"
                 },
                 {
-                  "englishLabel": "other",
                   "label": "ostali"
                 }
               ]
             },
             {
-              "englishLabel": "URL",
               "label": "URL"
             }
           ]
@@ -59,47 +46,37 @@
       ]
     },
     {
-      "englishLabel": "Visuals",
       "label": "Vizualna svojstva",
       "fields": [
         {
-          "englishLabel": "Shape",
           "label": "Forma",
           "options": [
             {
-              "englishLabel": "Rectangular",
               "label": "Pravougaoni"
             },
             {
-              "englishLabel": "Circular",
               "label": "Okrugli"
             }
           ]
         },
         {
-          "englishLabel": "Background color for hotspot",
           "label": "Boja pozadine za hotpost",
           "englishDefault": "rgba(255, 255, 255, 0)",
           "default": "rgba(255, 255, 255, 0)"
         },
         {
-          "englishLabel": "Use pointer cursor",
           "label": "Koristi kursor"
         },
         {
-          "englishLabel": "Add blinking effect",
           "label": "Dodati efekat blinkanja",
-          "englishDescription": "Note: Blinking effect is always enabled in the editor so you are able to find transparent hotspots",
           "description": "Napomena: Efekat blinkanja je uvijek omogućen u editoru kako bi bili u stanju naći transparentne hotspots."
         }
       ]
     },
     {
-      "englishLabel": "Texts",
       "label": "Tekstovi",
       "fields": [
         {
-          "englishLabel": "Descriptive text for assistive technologies",
           "label": "Opisni tekst za pomoćne tehnologije"
         }
       ]
