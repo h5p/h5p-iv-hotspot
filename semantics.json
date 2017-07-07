@@ -225,7 +225,7 @@
     "importance": "low",
     "fields": [
       {
-        "name": "ariaLabel",
+        "name": "title",
         "type": "text",
         "importance": "low",
         "label": "Title",
