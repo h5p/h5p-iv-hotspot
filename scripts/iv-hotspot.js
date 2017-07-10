@@ -74,9 +74,17 @@ H5P.IVHotspot = (function ($, EventDispatcher) {
         }));
       }
 
-      if (parameters.texts.showTitle && parameters.texts.title != undefined) {
-        $a.append('<p class="h5p-ivhotspot-interaction-title">' + parameters.texts.title + '</p>');
-        if (parameters.texts.titleColor) {
+      if (parameters.texts.title != undefined) {
+        var $title = $('<p>', {
+                        class: 'h5p-ivhotspot-interaction-title',
+                        text: parameters.texts.title
+                      }).appendTo($a);
+
+        if (!parameters.texts.showTitle) {
+          $title.addClass('h5p-ivhotspot-hidden');
+        }
+
+        else if (parameters.texts.titleColor) {
           $a.css('color', parameters.texts.titleColor);
         }
       }

@@ -229,7 +229,7 @@
         "type": "text",
         "importance": "low",
         "label": "Title",
-        "optional": true
+        "optional": false 
       },
       {
         "name": "showTitle",
