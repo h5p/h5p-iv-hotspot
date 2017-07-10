@@ -47,12 +47,21 @@ H5P.IVHotspot = (function ($, EventDispatcher) {
 
         link.attach($container);
         $a = $container.find('a');
+        $a.keypress(function (event) {
+            if (event.which === 32) {
+              this.click();
+            }
+        });
       }
       else {
         $a = $('<a>', {
           href: '#'
         }).on('click', function () {
           self.trigger('goto', parameters.destination.time);
+        }).keypress(function (event) {
+          if (event.which === 32) {
+            self.trigger('goto', parameters.destination.time);
+          }
         });
         $container.html($a);
       }
