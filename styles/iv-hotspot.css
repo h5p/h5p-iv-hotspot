@@ -22,6 +22,11 @@
   text-align: center;
   vertical-align: middle;
 }
+.h5p-ivhotspot > a:focus {
+  outline: 2px solid #179fff;
+  outline-offset: 8px;
+}
+
 .h5p-ivhotspot.circular,
 .h5p-ivhotspot.circular > a,
 .h5p-ivhotspot.circular .blinking-hotspot {
