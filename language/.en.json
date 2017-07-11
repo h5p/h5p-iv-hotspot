@@ -83,13 +83,18 @@
       "label": "Texts",
       "fields": [
         {
-          "label": "Title"
+          "label": "Alternative Text",
+          "description": "Describe the subject the hotspot covers, used for readspeakers",
+          "placeholder": "An apple on a table"
         },
         {
-          "label": "Show title"
+          "label": "Hotspot Label"
         },
         {
-          "label": "Title color",
+          "label": "Show label"
+        },
+        {
+          "label": "Label color",
           "default": "rgb(0, 0, 0)",
           "showWhen": {
             "rules": [

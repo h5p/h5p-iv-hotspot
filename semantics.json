@@ -222,36 +222,46 @@
     "name": "texts",
     "type": "group",
     "label": "Texts",
+    "expanded": true,
     "importance": "low",
     "fields": [
       {
-        "name": "title",
+        "name": "alternativeText",
         "type": "text",
         "importance": "low",
-        "label": "Title",
-        "optional": false 
+        "label": "Alternative Text",
+        "description": "Describe the subject the hotspot covers, used for readspeakers",
+        "placeholder": "An apple on a table",
+        "optional": false
       },
       {
-        "name": "showTitle",
+        "name": "label",
+        "type": "text",
+        "importance": "low",
+        "label": "Hotspot Label",
+        "optional": true
+      },
+      {
+        "name": "showLabel",
         "type": "boolean",
-        "label": "Show title",
+        "label": "Show label",
         "importance": "low",
-        "default": true
+        "default": false
       },
       {
-        "name": "titleColor",
+        "name": "labelColor",
         "type": "text",
-        "label": "Title color",
+        "label": "Label color",
         "widget": "showWhen",
         "importance": "low",
         "optional": true,
         "default": "rgb(0, 0, 0)",
         "showWhen": {
-          "detach": true,
+          "detach": false,
           "widget": "colorSelector",
           "rules": [
             {
-              "field": "showTitle",
+              "field": "showLabel",
               "equals": true
             }
           ]
