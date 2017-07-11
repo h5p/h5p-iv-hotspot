@@ -37,7 +37,7 @@
 .h5p-ivhotspot.rounded-rectangle .blinking-hotspot {
   border-radius: 1em;
 }
-.h5p-ivhotspot-hidden {
+.h5p-ivhotspot-invisible {
   color: transparent;
 }
 .blinking-hotspot {

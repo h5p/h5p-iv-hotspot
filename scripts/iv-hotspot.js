@@ -81,7 +81,7 @@ H5P.IVHotspot = (function ($, EventDispatcher) {
                       }).appendTo($a);
 
         if (!parameters.texts.showTitle) {
-          $title.addClass('h5p-ivhotspot-hidden');
+          $title.addClass('h5p-ivhotspot-invisible');
         }
 
         else if (parameters.texts.titleColor) {
