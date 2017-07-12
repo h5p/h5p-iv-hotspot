@@ -75,23 +75,22 @@ H5P.IVHotspot = (function ($, EventDispatcher) {
           'class': 'blinking-hotspot'
         }));
       }
+      var alternativeTextContent = [parameters.texts.alternativeText, parameters.texts.label]
+        .filter(function (text) {
+          return text !== undefined;
+        }).join('. ');
+
+      var $alternativeText = $('<p>', {
+                      id: 'ivhotspot-' + self.instanceIndex + '-description',
+                      class: 'h5p-ivhotspot-invisible',
+                      text: alternativeTextContent
+                    }).appendTo($container);
 
       if (parameters.texts.label !== undefined) {
         var $label = $('<p>', {
                         class: 'h5p-ivhotspot-interaction-title',
                         text: parameters.texts.label
                       }).appendTo($a);
-
-        var alternativeTextContent = [parameters.texts.alternativeText, parameters.texts.label]
-          .filter(function (text) {
-            return text !== undefined;
-          }).join('. ');
-
-        var $alternativeText = $('<p>', {
-                        id: 'ivhotspot-' + self.instanceIndex + '-description',
-                        class: 'h5p-ivhotspot-invisible',
-                        text: alternativeTextContent
-                      }).appendTo($container);
 
         if (!parameters.texts.showLabel) {
           $label.addClass('h5p-ivhotspot-invisible');
