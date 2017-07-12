@@ -57,7 +57,7 @@ H5P.IVHotspot = (function ($, EventDispatcher) {
       else {
         $a = $('<a>', {
           href: '#',
-          'aria-labelledby': 'a11y' + self.instanceIndex
+          'aria-labelledby': 'ivhotspot-' + self.instanceIndex + '-description'
         }).on('click', function () {
           self.trigger('goto', parameters.destination.time);
         }).keypress(function (event) {
@@ -82,10 +82,15 @@ H5P.IVHotspot = (function ($, EventDispatcher) {
                         text: parameters.texts.label
                       }).appendTo($a);
 
-        var $a11y = $('<p>', {
-                        id: 'a11y-' + self.instanceIndex,
+        var alternativeTextContent = [parameters.texts.alternativeText, parameters.texts.label]
+          .filter(function (text) {
+            return text !== undefined;
+          }).join('. ');
+
+        var $alternativeText = $('<p>', {
+                        id: 'ivhotspot-' + self.instanceIndex + '-description',
                         class: 'h5p-ivhotspot-invisible',
-                        text: parameters.texts.label ? parameters.texts.alternativeText + '. ' + parameters.texts.label : parameters.texts.alternativeText
+                        text: alternativeTextContent
                       }).appendTo($container);
 
         if (!parameters.texts.showLabel) {
