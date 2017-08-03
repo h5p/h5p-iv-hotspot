@@ -9,6 +9,7 @@ H5P.IVHotspot = (function ($, EventDispatcher) {
    */
   function IVHotspot(parameters) {
     var self = this;
+    self.instanceIndex = getAndIncrementGlobalCounter();
 
     if (typeof parameters.texts === 'string') {
       parameters.texts = {};
@@ -47,15 +48,22 @@ H5P.IVHotspot = (function ($, EventDispatcher) {
 
         link.attach($container);
         $a = $container.find('a');
-        if (parameters.texts.ariaLabel) {
-          $a.attr('aria-label', parameters.texts.ariaLabel);
-        }
+        $a.keypress(function (event) {
+            if (event.which === 32) {
+              this.click();
+            }
+        });
       }
       else {
         $a = $('<a>', {
-          'aria-label': parameters.texts.ariaLabel
+          href: '#',
+          'aria-labelledby': 'ivhotspot-' + self.instanceIndex + '-description'
         }).on('click', function () {
           self.trigger('goto', parameters.destination.time);
+        }).keypress(function (event) {
+          if (event.which === 32) {
+            self.trigger('goto', parameters.destination.time);
+          }
         });
         $container.html($a);
       }
@@ -67,15 +75,49 @@ H5P.IVHotspot = (function ($, EventDispatcher) {
           'class': 'blinking-hotspot'
         }));
       }
+      var alternativeTextContent = [parameters.texts.alternativeText, parameters.texts.label]
+        .filter(function (text) {
+          return text !== undefined;
+        }).join('. ');
 
-      if (parameters.texts.showTitle && parameters.texts.ariaLabel != undefined) {
-        $a.append('<p class="h5p-ivhotspot-interaction-title">' + parameters.texts.ariaLabel + '</p>');
-        if (parameters.texts.titleColor) {
-          $a.css('color', parameters.texts.titleColor);
+      var $alternativeText = $('<p>', {
+                      id: 'ivhotspot-' + self.instanceIndex + '-description',
+                      class: 'h5p-ivhotspot-invisible',
+                      text: alternativeTextContent
+                    }).appendTo($container);
+
+      if (parameters.texts.label !== undefined) {
+        var $label = $('<p>', {
+                        class: 'h5p-ivhotspot-interaction-title',
+                        text: parameters.texts.label
+                      }).appendTo($a);
+
+        if (!parameters.texts.showLabel) {
+          $label.addClass('h5p-ivhotspot-invisible');
+        }
+
+        else if (parameters.texts.labelColor) {
+          $a.css('color', parameters.texts.labelColor);
         }
       }
     };
   }
+
+  /**
+   * Use a global counter to separate instances of iv-hotspots,
+   * to maintain unique ids.
+   *
+   * Note that ids does not have to be unique across iframes.
+   *
+   * @return {number}
+   */
+  function getAndIncrementGlobalCounter() {
+    if (window.interactiveVideoCounter === undefined) {
+      window.interactiveVideoCounter = 0;
+    }
+
+    return window.interactiveVideoCounter++;
+  };
 
   IVHotspot.prototype = Object.create(EventDispatcher.prototype);
   IVHotspot.prototype.constructor = IVHotspot;

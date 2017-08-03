@@ -14,15 +14,31 @@
   width: 100%;
   height: 100%;
 }
+.h5p-ivhotspot > a {
+  text-decoration: none;
+}
 .h5p-ivhotspot > a > p {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
 }
+.h5p-ivhotspot > a:focus {
+  outline: 2px solid #179fff;
+  outline-offset: 8px;
+}
+
 .h5p-ivhotspot.circular,
 .h5p-ivhotspot.circular > a,
 .h5p-ivhotspot.circular .blinking-hotspot {
   border-radius: 50%;
+}
+.h5p-ivhotspot.rounded-rectangle,
+.h5p-ivhotspot.rounded-rectangle > a,
+.h5p-ivhotspot.rounded-rectangle .blinking-hotspot {
+  border-radius: 1em;
+}
+.h5p-ivhotspot-invisible {
+  color: transparent;
 }
 .blinking-hotspot {
   position: absolute;
