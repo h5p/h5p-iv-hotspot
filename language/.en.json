@@ -12,8 +12,7 @@
             {
               "label": "Another page (URL)"
             }
-          ],
-          "default": "timecode"
+          ]
         },
         {
           "label": "Go To",
@@ -37,8 +36,7 @@
                 {
                   "label": "other"
                 }
-              ],
-              "default": "http://"
+              ]
             },
             {
               "label": "URL"
@@ -62,13 +60,10 @@
             {
               "label": "Rounded Rectangle"
             }
-          ],
-          "default": "rectangular"
+          ]
         },
         {
-          "label": "Background color for hotspot",
-          "default": "rgba(255, 255, 255, 0)",
-          "spectrum": {}
+          "label": "Background color for hotspot"
         },
         {
           "label": "Use pointer cursor"
@@ -94,14 +89,7 @@
           "label": "Show label"
         },
         {
-          "label": "Label color",
-          "default": "rgb(0, 0, 0)",
-          "showWhen": {
-            "rules": [
-              {}
-            ]
-          },
-          "spectrum": {}
+          "label": "Label color"
         }
       ]
     }

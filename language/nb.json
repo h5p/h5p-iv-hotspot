@@ -56,13 +56,14 @@
             },
             {
               "label": "Sirkulær"
+            },
+            {
+              "label": "Avrundet rektangel"
             }
           ]
         },
         {
-          "label": "Bakgrunnsfarge for hotspot",
-          "englishDefault": "rgba(255, 255, 255, 0)",
-          "default": "rgba(255, 255, 255, 0)"
+          "label": "Bakgrunnsfarge for hotspot"
         },
         {
           "label": "Visuell effekt for muse-peker"
@@ -77,7 +78,18 @@
       "label": "Tekster",
       "fields": [
         {
-          "label": "Beskrivende tekst for hjelpemiddelteknologier"
+          "description": "Describe the subject the hotspot covers. Used for readspeakers",
+          "label": "Alternative Text",
+          "placeholder": "An apple on a table"
+        },
+        {
+          "label": "Hotspot Label"
+        },
+        {
+          "label": "Show label"
+        },
+        {
+          "label": "Label color"
         }
       ]
     }
