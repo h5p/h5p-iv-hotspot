@@ -1,28 +1,28 @@
 {
   "semantics": [
     {
-      "label": "Endepunkt",
+      "label": "Destinacija",
       "fields": [
         {
-          "label": "Type",
+          "label": "Tip",
           "options": [
             {
-              "label": "Tidskode"
+              "label": "Kod vremena"
             },
             {
-              "label": "Annen side (URL)"
+              "label": "Druga stranica (URL)"
             }
           ]
         },
         {
-          "label": "Gå til",
-          "description": "Tidskoden brukeren tas til ved å trykke på hotspot. Tidskoden må være i formatet M:SS."
+          "label": "Idi na",
+          "description": "Ciljano vrijeme koje želi korinik će biti uzeto pritiskom na hotspot.Unesite kod vremena u formatu M:SS."
         },
         {
           "label": "URL",
           "fields": [
             {
-              "label": "Protokoll",
+              "label": "Protokol",
               "options": [
                 {
                   "label": "http://"
@@ -31,10 +31,10 @@
                   "label": "https://"
                 },
                 {
-                  "label": "(rot relativt)"
+                  "label": "(u odnosu na korijen)"
                 },
                 {
-                  "label": "andre"
+                  "label": "ostali"
                 }
               ]
             },
@@ -46,36 +46,36 @@
       ]
     },
     {
-      "label": "Visuelle egenskaper",
+      "label": "Vizualna svojstva",
       "fields": [
         {
-          "label": "Form",
+          "label": "Forma",
           "options": [
             {
-              "label": "Rektangulær"
+              "label": "Pravougaoni"
             },
             {
-              "label": "Sirkulær"
+              "label": "Okrugli"
             },
             {
-              "label": "Avrundet rektangel"
+              "label": "Rounded Rectangle"
             }
           ]
         },
         {
-          "label": "Bakgrunnsfarge for hotspot"
+          "label": "Boja pozadine za hotpost"
         },
         {
-          "label": "Visuell effekt for muse-peker"
+          "label": "Koristi kursor"
         },
         {
-          "label": "Vis blinkende effekt",
-          "description": "Blinkende effekt er alltid på i editor så du kan se hvor gjennomsiktige hotspots befinner seg."
+          "label": "Dodati efekat blinkanja",
+          "description": "Napomena: Efekat blinkanja je uvijek omogućen u editoru kako bi bili u stanju naći transparentne hotspots."
         }
       ]
     },
     {
-      "label": "Tekster",
+      "label": "Tekstovi",
       "fields": [
         {
           "description": "Describe the subject the hotspot covers. Used for readspeakers",
