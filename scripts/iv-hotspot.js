@@ -81,17 +81,17 @@ H5P.IVHotspot = (function ($, EventDispatcher) {
           return text !== undefined;
         }).join('. ');
 
-      var $alternativeText = $('<p>', {
-                      id: 'ivhotspot-' + self.instanceIndex + '-description',
-                      class: 'h5p-ivhotspot-invisible',
-                      text: alternativeTextContent
-                    }).appendTo($container);
+      $('<p>', {
+        id: 'ivhotspot-' + self.instanceIndex + '-description',
+        class: 'h5p-ivhotspot-invisible',
+        text: alternativeTextContent
+      }).appendTo($container);
 
       if (parameters.texts.label !== undefined) {
         var $label = $('<p>', {
-                        class: 'h5p-ivhotspot-interaction-title',
-                        text: parameters.texts.label
-                      }).appendTo($a);
+          class: 'h5p-ivhotspot-interaction-title',
+          text: parameters.texts.label
+        }).appendTo($a);
 
         if (!parameters.texts.showLabel) {
           $label.addClass('h5p-ivhotspot-invisible');
@@ -118,7 +118,7 @@ H5P.IVHotspot = (function ($, EventDispatcher) {
     }
 
     return window.interactiveVideoCounter++;
-  };
+  }
 
   IVHotspot.prototype = Object.create(EventDispatcher.prototype);
   IVHotspot.prototype.constructor = IVHotspot;
