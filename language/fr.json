@@ -63,7 +63,8 @@
           ]
         },
         {
-          "label": "Couleur d'arrière-plan pour la zone sensible"
+          "label": "Couleur d'arrière-plan pour la zone sensible",
+          "default": "rgba(255, 255, 255, 0)"
         },
         {
           "label": "Utiliser le curseur pointeur"
@@ -89,7 +90,8 @@
           "label": "Montrer l'intitulé"
         },
         {
-          "label": "Couleur de l'intitulé"
+          "label": "Couleur de l'intitulé",
+          "default": "rgb(0, 0, 0)"
         }
       ]
     }
