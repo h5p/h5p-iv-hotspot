@@ -63,8 +63,7 @@
           ]
         },
         {
-          "label": "Background color for hotspot",
-          "default": "rgba(255, 255, 255, 0)"
+          "label": "Background color for hotspot"
         },
         {
           "label": "Use pointer cursor"
@@ -90,8 +89,7 @@
           "label": "Show label"
         },
         {
-          "label": "Label color",
-          "default": "rgb(0, 0, 0)"
+          "label": "Label color"
         }
       ]
     }
