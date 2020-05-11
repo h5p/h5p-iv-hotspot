@@ -4,7 +4,7 @@
       "label": "Ziel",
       "fields": [
         {
-          "label": "Art",
+          "label": "Typ",
           "options": [
             {
               "label": "Stelle im Video"
