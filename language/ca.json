@@ -70,7 +70,7 @@
         },
         {
           "label": "Afegeix un efecte de parpelleig",
-          "description": "Nota: l’efecte de parpelleig sempre està activat a l’editor, perquè vegeu les zones sensibles transparents."
+          "description": "Nota: l’efecte de parpelleig sempre està activat a l’editor, perquè vegeu les zones sensibles transparents"
         }
       ]
     },
@@ -79,7 +79,7 @@
       "fields": [
         {
           "label": "Text alternatiu",
-          "description": "Descriviu el tema de la zona sensible, perquè el puguin utilitzar els altaveus de lectura.",
+          "description": "Descriviu el tema de la zona sensible, perquè el puguin utilitzar els altaveus de lectura",
           "placeholder": "Una poma sobre la taula"
         },
         {
