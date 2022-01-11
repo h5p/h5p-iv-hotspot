@@ -16,7 +16,7 @@
         },
         {
           "label": "Ga naar",
-          "description": "De doeltijd waar de gebruiker naartoe gaat als hij op de hotspot klikt. Voer de tijdscode in in M:SS formaat."
+          "description": "De doeltijd waar de gebruiker naartoe gaat als hij op de hotspot klikt. Voer de tijdscode in M:SS-formaat in."
         },
         {
           "label": "URL",
@@ -70,7 +70,7 @@
         },
         {
           "label": "Voeg knippereffect toe",
-          "description": "Merk op dat het knippereffect altijd is ingeschakeld in de editor zodat je je transparente hotspots kunt vinden"
+          "description": "Merk op dat het knippereffect altijd is ingeschakeld in de editor zodat je de transparante hotspots kunt vinden"
         }
       ]
     },
