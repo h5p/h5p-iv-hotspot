@@ -16,7 +16,7 @@
         },
         {
           "label": "Ga naar",
-          "description": "Het doeltijdstip waarheen de gebruiker wordt gebracht wanneer hij op de hotspot klikt. Voer tijdcode in, in de opmaak M:SS."
+          "description": "De doeltijd waar de gebruiker naartoe gaat als hij op de hotspot klikt. Voer de tijdscode in in M:SS formaat."
         },
         {
           "label": "URL",
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "label": "Visueel",
+      "label": "Visuele effecten",
       "fields": [
         {
           "label": "Vorm",
@@ -66,7 +66,7 @@
           "label": "Achtergrondkleur voor hotspot"
         },
         {
-          "label": "Gebruik pointer cursor"
+          "label": "Gebruik pijlcursor"
         },
         {
           "label": "Voeg knippereffect toe",
@@ -79,11 +79,11 @@
       "fields": [
         {
           "label": "Alternatieve tekst",
-          "description": "Beschrijf het onderdeel dat de hotspot betreft. Gebruikt voor readspeakers",
+          "description": "Beschrijf het onderdeel waarop de hotspot is geplaatst. Gebruikt voor schermlezers",
           "placeholder": "Een appel op een tafel"
         },
         {
-          "label": "Hotspot Label"
+          "label": "Label voor hotspot"
         },
         {
           "label": "Toon label"
