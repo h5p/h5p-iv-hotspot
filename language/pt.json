@@ -52,7 +52,7 @@
           "label": "Forma",
           "options": [
             {
-              "label": "Retângular"
+              "label": "Retangular"
             },
             {
               "label": "Circular"
@@ -66,11 +66,11 @@
           "label": "Cor de fundo do hotspot"
         },
         {
-          "label": "Usar o cursor ponteiro"
+          "label": "Usar o cursor"
         },
         {
           "label": "Adicionar efeito intermitente",
-          "description": "Nota: O efeito intermitente esta sempre ativado no editor sendo assim mais fácil encontrar hotspots transparentes."
+          "description": "Nota: O efeito intermitente está sempre ativado no editor sendo assim mais fácil encontrar hotspots transparentes"
         }
       ]
     },
@@ -78,8 +78,8 @@
       "label": "Textos",
       "fields": [
         {
-          "label": "Texto Alternativo",
-          "description": "Descrição do sujeito relacionado com o hotspot. Utilizado para leitores de ecrã.",
+          "label": "Texto alternativo",
+          "description": "Descrição do assunto relacionado com o hotspot. Utilizado para leitores de ecrã",
           "placeholder": "Uma maçã em cima de uma mesa"
         },
         {
