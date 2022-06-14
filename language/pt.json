@@ -4,7 +4,7 @@
       "label": "Destino",
       "fields": [
         {
-          "label": "Tipo",
+          "label": "Type",
           "options": [
             {
               "label": "Tempo"
