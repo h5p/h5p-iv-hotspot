@@ -16,7 +16,7 @@
         },
         {
           "label": "Ir A",
-          "description": "El tiempo destino a donde será llevado el usuario que presione el hotspot. Ingresar código de tiempo en el formato M:SS."
+          "description": "El tiempo de destino a donde se llevará al usuario que presione el punto de acceso. Escribe código de tiempo en formato M:SS."
         },
         {
           "label": "URL",
@@ -34,7 +34,7 @@
                   "label": "(relativo a raíz)"
                 },
                 {
-                  "label": "otro"
+                  "label": "otros"
                 }
               ]
             },
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "label": "Visuales",
+      "label": "Efectos visuales",
       "fields": [
         {
           "label": "Forma",
@@ -63,14 +63,14 @@
           ]
         },
         {
-          "label": "Color del fondo para hotspot"
+          "label": "Color de fondo para el punto de acceso"
         },
         {
-          "label": "Usar cursor del puntero"
+          "label": "Usar cursor del ratón"
         },
         {
-          "label": "Añadir efecto parpadeante",
-          "description": "Nota: El efecto parpadeante siempre está habilitado en el editor para que Usted pueda encontrar los hotspots transparentes"
+          "label": "Añadir efecto de parpadeo",
+          "description": "Nota: El efecto de parpadeo siempre está habilitado en el editor para que puedas encontrar los puntos de acceso transparentes"
         }
       ]
     },
@@ -79,11 +79,11 @@
       "fields": [
         {
           "label": "Texto Alternativo",
-          "description": "Describir el sujeto que el hotspot cubre . Usado para lectores de texto en voz alta",
+          "description": "Describir el tema que cubre el punto de acceso. Usado para lectores de pantalla",
           "placeholder": "Una manzana sobre una mesa"
         },
         {
-          "label": "Etiqueta Hotspot"
+          "label": "Etiqueta Punto de acceso"
         },
         {
           "label": "Mostrar Etiqueta"
