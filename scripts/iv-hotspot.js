@@ -15,6 +15,12 @@ H5P.IVHotspot = (function ($, EventDispatcher) {
       parameters.texts = {};
     }
 
+    // Decode HTML encoded strings
+    parameters.texts.label =
+      htmlDecode(parameters.texts.label);
+    parameters.texts.alternativeText =
+      htmlDecode(parameters.texts.alternativeText);
+
     parameters = $.extend(true, {
       destination: {
         type: 'timecode',
@@ -118,6 +124,17 @@ H5P.IVHotspot = (function ($, EventDispatcher) {
     }
 
     return window.interactiveVideoCounter++;
+  }
+
+  /**
+   * Decode HTML encoded text.
+   * @param {string} text Text to decode.
+   * @returns {string} Decoded text.
+   */
+  function htmlDecode(text) {
+    const div = document.createElement('div');
+    div.innerHTML = text;
+    return div.textContent || div.innerText || '';
   }
 
   IVHotspot.prototype = Object.create(EventDispatcher.prototype);
