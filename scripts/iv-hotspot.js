@@ -15,12 +15,6 @@ H5P.IVHotspot = (function ($, EventDispatcher) {
       parameters.texts = {};
     }
 
-    // Decode HTML encoded strings
-    parameters.texts.label =
-      htmlDecode(parameters.texts.label);
-    parameters.texts.alternativeText =
-      htmlDecode(parameters.texts.alternativeText);
-
     parameters = $.extend(true, {
       destination: {
         type: 'timecode',
@@ -32,6 +26,12 @@ H5P.IVHotspot = (function ($, EventDispatcher) {
       },
       texts: {}
     }, parameters);
+
+    // Decode HTML encoded strings
+    parameters.texts.label =
+      htmlDecode(parameters.texts.label);
+    parameters.texts.alternativeText =
+      htmlDecode(parameters.texts.alternativeText);
 
     EventDispatcher.call(self);
 
