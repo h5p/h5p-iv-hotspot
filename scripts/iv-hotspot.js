@@ -41,7 +41,7 @@ H5P.IVHotspot = (function ($, EventDispatcher) {
      * @param {H5P.jQuery} $container
      */
     self.attach = function ($container) {
-      $container.addClass('h5p-ivhotspot').css({
+      $container.addClass('h5p-ivhotspot h5p-theme').css({
         backgroundColor: parameters.visuals.backgroundColor
       }).addClass(parameters.visuals.shape);
 
