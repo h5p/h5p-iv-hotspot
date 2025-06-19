@@ -1,7 +1,7 @@
 /** @namespace H5PUpgrades */
 var H5PUpgrades = H5PUpgrades || {};
 
-H5PUpgrades['H5P.IVHotspot'] = (function ($) {
+H5PUpgrades['H5P.IVHotspot'] = (function () {
   return {
     1: {
 
@@ -30,4 +30,4 @@ H5PUpgrades['H5P.IVHotspot'] = (function ($) {
       }
     }
   };
-})(H5P.jQuery);
+})();
