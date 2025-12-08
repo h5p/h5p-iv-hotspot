@@ -28,9 +28,9 @@ H5P.IVHotspot = (function ($, EventDispatcher) {
     }, parameters);
 
     // Decode HTML encoded strings
-    parameters.texts.label =
+    parameters.texts.decodedLabel =
       htmlDecode(parameters.texts.label);
-    parameters.texts.alternativeText =
+    parameters.texts.decodedAlternativeText =
       htmlDecode(parameters.texts.alternativeText);
 
     EventDispatcher.call(self);
@@ -82,21 +82,25 @@ H5P.IVHotspot = (function ($, EventDispatcher) {
           'class': 'blinking-hotspot'
         }));
       }
-      var alternativeTextContent = [parameters.texts.alternativeText, parameters.texts.label]
-        .filter(function (text) {
-          return text !== undefined;
-        }).join('. ');
+
+      let alternativeTextContent;
+      if (parameters.texts.alternativeText) {
+        alternativeTextContent = parameters.texts.decodedAlternativeText;
+      }
+      else if (parameters.texts.label) {
+        alternativeTextContent = parameters.texts.decodedLabel;
+      }
 
       $('<p>', {
         id: 'ivhotspot-' + self.instanceIndex + '-description',
         class: 'h5p-ivhotspot-invisible',
-        text: alternativeTextContent
+        text: alternativeTextContent ?? ''
       }).appendTo($container);
 
       if (parameters.texts.label !== undefined) {
         var $label = $('<p>', {
           class: 'h5p-ivhotspot-interaction-title',
-          text: parameters.texts.label
+          text: parameters.texts.decodedLabel
         }).appendTo($a);
 
         if (!parameters.texts.showLabel) {
