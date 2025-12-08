@@ -87,7 +87,7 @@ H5P.IVHotspot = (function ($, EventDispatcher) {
       if (parameters.texts.alternativeText) {
         alternativeTextContent = parameters.texts.decodedAlternativeText;
       }
-      if (alternativeTextContent === undefined && parameters.texts.label) {
+      else if (parameters.texts.label) {
         alternativeTextContent = parameters.texts.decodedLabel;
       }
 
