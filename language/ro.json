@@ -1,0 +1,97 @@
+{
+  "semantics": [
+    {
+      "label": "Destinație",
+      "fields": [
+        {
+          "label": "Tip",
+          "options": [
+            {
+              "label": "Cod de timp"
+            },
+            {
+              "label": "Altă pagină (URL)"
+            }
+          ]
+        },
+        {
+          "label": "Mergi la",
+          "description": "Momentul țintă la care va fi dus utilizatorul după apăsarea punctului activ. Introduceți codul de timp în formatul M:SS."
+        },
+        {
+          "label": "URL",
+          "fields": [
+            {
+              "label": "Protocol",
+              "options": [
+                {
+                  "label": "http://"
+                },
+                {
+                  "label": "https://"
+                },
+                {
+                  "label": "(relativ la rădăcină)"
+                },
+                {
+                  "label": "altul"
+                }
+              ]
+            },
+            {
+              "label": "URL"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Vizualuri",
+      "fields": [
+        {
+          "label": "Formă",
+          "options": [
+            {
+              "label": "Dreptunghiular"
+            },
+            {
+              "label": "Circular"
+            },
+            {
+              "label": "Dreptunghi cu colțuri rotunjite"
+            }
+          ]
+        },
+        {
+          "label": "Culoare de fundal pentru punctul activ"
+        },
+        {
+          "label": "Folosește cursor de tip indicator"
+        },
+        {
+          "label": "Adaugă efect de clipire",
+          "description": "Notă: Efectul de clipire este întotdeauna activat în editor pentru a putea găsi punctele active transparente"
+        }
+      ]
+    },
+    {
+      "label": "Texte",
+      "fields": [
+        {
+          "label": "Text alternativ",
+          "description": "Descrieți subiectul pe care îl acoperă punctul activ. Folosit pentru cititoarele de ecran.",
+          "placeholder": "Un măr pe o masă"
+        },
+        {
+          "label": "Etichetă punct activ"
+        },
+        {
+          "label": "Afișează eticheta"
+        },
+        {
+          "label": "Culoare etichetă"
+        }
+      ]
+    }
+  ]
+}
